@@ -24,8 +24,11 @@ namespace minElementMethod
             {
                 for (var columnNumber = 0; columnNumber < matrix.GetLength(1); columnNumber++)
                 {
-                    matrix[rowNumber, columnNumber].Value = InputAndOutput.
-                        GetNumberFromUser($"Enter rate of [{rowNumber}, {columnNumber}] : ");
+                    matrix[rowNumber, columnNumber] = new Element
+                    {
+                        Value = InputAndOutput.
+                        GetNumberFromUser($"Enter rate of [{rowNumber}, {columnNumber}] : ")
+                    };
                 }
             }
         }

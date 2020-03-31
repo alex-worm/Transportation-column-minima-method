@@ -8,6 +8,6 @@ namespace minElementMethod
     {
         public int Value { get; set; }
 
-        public int Delivery { get; set; }
+        public int Delivery { get; set; } 
     }
 }

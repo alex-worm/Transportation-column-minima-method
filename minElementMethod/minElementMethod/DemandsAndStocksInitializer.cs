@@ -8,7 +8,7 @@ namespace minElementMethod
     {
         public static (int[], int[]) DemandsAndStocksInitialize(Element[,] matrix)
         {
-            int[] demands = new int[matrix.GetLength(1)];
+            int[] demands = new int[matrix.GetLength(1)]; 
             for (var rowNumber = 0; rowNumber < matrix.GetLength(1); rowNumber++)
             {
                 demands[rowNumber] = InputAndOutput.GetNumberFromUser($"Enter demand #{rowNumber} : ");

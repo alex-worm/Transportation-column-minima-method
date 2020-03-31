@@ -14,19 +14,14 @@ namespace minElementMethod
         }
         public static void ResultOutput(Element[,] matrix)
         {
+            Console.WriteLine("\nResult matrix:");
+
             for (var rowNumber = 0; rowNumber < matrix.GetLength(0); rowNumber++) 
             {
                 Console.WriteLine();
-                for (var columnNumber = 0; columnNumber < matrix.GetLength(1); rowNumber++)
+                for (var columnNumber = 0; columnNumber < matrix.GetLength(1); columnNumber++)
                 {
-                    if (matrix[rowNumber, columnNumber].Delivery != 0)
-                    {
-                        Console.Write($"|{matrix[rowNumber, columnNumber].Delivery}|");
-                    }
-                    else
-                    {
-                        Console.Write("|-|");
-                    }
+                        Console.Write($"{matrix[rowNumber, columnNumber].Delivery}\t");
                 }
             }
 
@@ -35,7 +30,7 @@ namespace minElementMethod
             for (var rowNumber = 0; rowNumber < matrix.GetLength(0); rowNumber++)
             {
                 Console.WriteLine();
-                for (var columnNumber = 0; columnNumber < matrix.GetLength(1); rowNumber++)
+                for (var columnNumber = 0; columnNumber < matrix.GetLength(1); columnNumber++)
                 {
                     function += matrix[rowNumber, columnNumber].Delivery * matrix[rowNumber, columnNumber].Value;
                 }

@@ -1,2 +1,2 @@
-# Transportation-column-minima-method
-Console application for finding the optimal transportat plan 
+# minima-method
+Console application that finds the optimal transportat plan 

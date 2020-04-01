@@ -21,7 +21,7 @@ namespace minElementMethod
                 Console.WriteLine();
                 for (var columnNumber = 0; columnNumber < matrix.GetLength(1); columnNumber++)
                 {
-                        Console.Write($"{matrix[rowNumber, columnNumber].Delivery}\t");
+                        Console.Write("{0,5}", matrix[rowNumber, columnNumber].Delivery);
                 }
             }
 
